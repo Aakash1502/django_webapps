@@ -1,0 +1,43 @@
+{% extends 'home/base1.html' %}
+<!doctype html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <title>Hello, world!</title>
+</head>
+
+<body>
+    {% block pagecontent %}
+    <nav class="navigation m-auto">
+        <div class="nav-left">
+            <span>Happy Birthday :-)</span>
+            <ul>
+                <li><a href="/">Home</a></li>
+            </ul>
+        </div>
+    </nav>
+    {% for post in allPosts %}
+    <div class="card">
+        <img src="/media/{{post.ux_image}}" alt="John">
+        <h1>{{post.ux_name}}</h1>
+        <p>{{post.ux_description}}</p>
+        
+    </div>
+    <p><button onclick="window.open('/media/{{post.ux_image}}');">View Image</button></p>
+    <script>
+        function fullimg() {
+
+        }
+    </script>
+    {% endfor %}
+    {% endblock %}
+    
+</body>
+
+</html>

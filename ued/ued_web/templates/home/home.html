@@ -1,0 +1,67 @@
+{% extends 'home/base.html' %}
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    
+    <title> {% block title %}HOME{% endblock %}</title>
+</head>
+
+<body>
+    {% block pagecontent %}
+    
+    <nav class="navigation m-auto">
+        <div class="nav-left">
+        <span>Happy Birthday :-)</span>
+        <ul>
+            <li><a href="/">Home</a></li>
+        </ul>
+        </div>
+    </nav>
+    
+    <div class="content max-width-2 m-auto">
+        <div class="content-left-article">
+            <h1>The UX designer</h1>
+            <p>User experience design (UXD, UED, or XD) is the process of supporting user behavior[1] through usability, usefulness, and desirability provided in the interaction with a product.Every time teams develop a product, app or service, they start by brainstorming (and even better with TRIZ). They connect with the data from research, copywriting, A/B testing, prototyping, wireframing, storytelling, usability, user interface design, animation, and etc. All combination results in a product for users who eventually appreciate their collaboration in lines</p>
+            <h3>Here, i will post every work done by me on the journey to become a successful UX designer.</h3>
+        </div>
+        <div class="post-img">
+            
+        </div>
+
+    </div>
+    <div class="max-width-2 m-auto"><hr></div>
+    <div class="more-articles max-width-2 m-auto">
+        <h2>Work you may like to see:</h2>
+        <div class="more-article">
+            <img src="{% static 'home/ux.svg' %}" alt="programming">
+            <div class="more-article-content">
+                <a href="/ux">UX Designs</a>
+                
+            </div>
+        </div>
+        <div class="more-article1">
+            <img src="{% static 'home/artwork.svg' %}" alt="programming">
+            <div class="more-article1-content">
+                <a href="/art">Artwork</a>
+                
+            </div>
+        </div>
+        
+    </div>
+        
+    <div class="fotter">
+
+        <p>Copyright &copy; iblog.com </p>
+        <p><a href="https://www.flaticon.com/">Icons made by</a>, Icons made by<a href="https://www.flaticon.com/authors/surang" title="surang">surang</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a></p>
+        
+    </div>
+    {% endblock %}
+</body>
+
+</html>

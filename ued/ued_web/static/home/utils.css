@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+:root{    /*variables in css*/
+    --font1: 'Roboto', sans-serif;
+    --font2: 'Itim', cursive;
+    --font3: 'Oswald', sans-serif;
+}
+.font1{
+    font-family: var(--font1);
+}
+.font2{
+    font-family: var(--font2);
+}
+.font3{
+    font-family: var(--font3);
+}
+.max-width-1{
+    max-width: 80vw;
+}
+
+.max-width-2{
+    max-width: 60vw;
+}
+
+.m-auto{
+    margin: auto;
+}
+
+.btn{
+    padding: 6px 13px;
+    font-size: 16px;
+    font-family: inherit;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn:hover{
+    color: black;
+    background-color: bisque;
+}
+
+.form-input{
+    padding: 3px 5px;
+    font-size: 16px;
+    margin: 0 13px;
+}

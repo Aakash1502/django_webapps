@@ -1,0 +1,38 @@
+{% extends 'home/base2.html' %}
+<!doctype html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <title>Hello, world!</title>
+</head>
+
+<body>
+    {% block pagecontent %}
+    <nav class="navigation m-auto">
+        <div class="nav-left">
+            <span>Happy Birthday :-)</span>
+            <ul>
+                <li><a href="/">Home</a></li>
+            </ul>
+        </div>
+    </nav>
+    {% for post in artPosts %}
+    <div class="card">
+        <img src="/media/{{post.art_image}}" alt="John">
+        <h1>{{post.art_name}}</h1>
+        <p>{{post.art_description}}</p>
+        
+    </div>
+    <p><button onclick="window.open('/media/{{post.art_image}}');">View Image</button></p>
+    {% endfor %}
+    {% endblock %}
+    
+</body>
+
+</html>
